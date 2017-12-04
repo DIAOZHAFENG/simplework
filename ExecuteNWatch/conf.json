@@ -1,0 +1,5 @@
+{
+"self_ip": "127.0.0.1",
+"port": 8080,
+"cmd": "python test_continue_output.py"
+}

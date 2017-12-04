@@ -1,0 +1,18 @@
+{
+  "receiver_group":"ai",
+  "maps":[
+    "FantasyAllStar",
+    "ModernCity"
+  ],
+  "difficulty":{
+    "新手":4,
+    "简单":1,
+    "困难":3,
+    "像人":5
+  },
+  "host":"10.0.18.24",
+  "user":"root",
+  "passwd":"123456",
+  "db":"stat_mirror_db",
+  "port":3306
+}

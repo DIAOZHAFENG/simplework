@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Index</title>
+        <style>
+            div{
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            button{
+                margin: auto;
+                text-align: center;
+            }
+            #terminal_output{
+                margin: auto;
+                width: 100%;
+                height: 90%;
+            }
+        </style>
+    </head>
+    <body onload="showLog()">
+        <div>
+            <input name='start' type='button' onclick='execute()' value='Start'/>
+            <textarea disabled="disabled" id="terminal_output"></textarea>
+        </div>
+        <script type="text/javascript">
+            var output = document.getElementById("terminal_output");
+            var xhr = new XMLHttpRequest();
+            function execute(){
+                xhr.open("GET", "execute", true);
+                xhr.send();
+            }
+            function showLog(){
+                xhr.open("GET", "showLog", true);
+                xhr.send();
+                xhr.onreadystatechange = function(){
+                    if (xhr.readyState==4 && xhr.status==200){
+                        output.value = xhr.responseText;
+                    }
+                }
+                setTimeout("showLog()", 1000);
+            }
+        </script>
+    </body>
+</html>

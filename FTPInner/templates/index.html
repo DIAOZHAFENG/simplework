@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>从外网ftp下载文件到内网ftp，然后你就可以在内网下载下来了</title>
+    </head>
+    <body>
+        <form method="POST" enctype="multipart/form-data" action="/download">
+            文件完整路径：<input type="text" name="path"/>
+            <p></p>
+            用户名：<input type="text" name="username"/>
+            <p></p>
+            密码：<input type="password" name="password"/>
+            <p></p>
+            <p>用户名密码不填默认<em>匿名</em>登录</p>
+            <input type="submit" value="提交"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "qcloud_appid": "10019353",
+  "qcloud_secret_id": "AKIDANxQBDwFyL9yoZrrS5I13HxbmXVqnWmP",
+  "qcloud_secret_key": "4UIYQpiCKObvndpYneHDz1w5Vf45VT26",
+  "local_root": "d:/",
+  "dst_root": "/hire",
+  "receiver": "shudingwen",
+  "self_ip": "127.0.0.1",
+  "port": 8080
+}

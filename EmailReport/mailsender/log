@@ -1,0 +1,171 @@
+{'no_cagesvn': False, 'project_params': None, 'script_commit': None, 'script_only': False, 'transfer_server': None, 'common_branch': 'release/invite_test', 'shipping': True, 'script_branch': None, 'qa': False, 'renew_xml': True, 'pack_path': 'Shipping', 'server_branch': 'release/invite_test', 'client_commit': None, 'server_commit': None, 'ypr_commit': None, 'map': None, 'deploy': False, 'transfer_single_server': None, 'map_branch': None, 'no_client': False, 'servertesttool': False, 'no_server': False, 'no_revert': False, 'user': None, 'no_clear': False, 'only_bin': False, 'cage': False, 'projects': None, 'launcher': False, 'ypr_branch': None, 'common_commit': None, 'no_compile': False, 'set_version': None, 'client_branch': None, 'project': None, 'mobile': False, 'transfer_client': None, 'get_version': False, 'svn_revision': None}
+Begin Build Task, Time = 2016-01-11 12:00:00
++++++ Get SVN Resource +++++
+('to_update dirs: ', [''])
+
+will update svn: 
+update svn() success
+svn() revision: 9365
++++++ Get GIT Resource +++++
+=> YPR: D:\WorkSpace\ACMOBA\ypr/
+Your branch is up-to-date with 'origin/develop'.
+
+Already up-to-date.
+
+commit 9bfec54dd40b87718314904510c0be9cfa58ed08
+=> Tools: D:/WorkSpace/ACMOBA/tools/
+Your branch is ahead of 'origin/develop' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Already up-to-date.
+
+commit 028fc66367660d7bf6e409f76d38644ea02b1dd8
+=> Common: D:/WorkSpace/ACMOBA/Common/
+Branch release/invite_test set up to track remote branch release/invite_test from origin.
+
+Already up-to-date.
+
+commit 4afd0b186e9ee93f9a49d8feeeb9ae23386385a6
+=> Client: D:/WorkSpace/ACMOBA/Client/
+Your branch is up-to-date with 'origin/develop'.
+
+Already up-to-date.
+
+commit 0c2eb79bfd2ab1c33740ad860f4f19392f154141
+=> Server: D:/WorkSpace/ACMOBA/Server/
+Branch release/invite_test set up to track remote branch release/invite_test from origin.
+
+Already up-to-date.
+
+commit 8e45934ab6f1bff5d5885328db1cc95715f73e35
++++++ Compile Protobuf +++++
++++++ Compile Doxygen +++++
+
+D:\WorkSpace\ACMOBA\Server>cd GameHostServer/src/Script/ 
+
+D:\WorkSpace\ACMOBA\Server\GameHostServer\src\Script>doxygen API.doxygen 
+Doxygen version 1.8.9.1
+Copyright Dimitri van Heesch 1997-2014
+
+You can use doxygen in a number of ways:
+
+1) Use doxygen to generate a template configuration file:
+    doxygen [-s] -g [configName]
+
+    If - is used for configName doxygen will write to standard output.
+
+2) Use doxygen to update an old configuration file:
+    doxygen [-s] -u [configName]
+
+3) Use doxygen to generate documentation using an existing configuration file:
+    doxygen [configName]
+
+    If - is used for configName doxygen will read from standard input.
+
+4) Use doxygen to generate a template file controlling the layout of the
+   generated documentation:
+    doxygen -l [layoutFileName.xml]
+
+5) Use doxygen to generate a template style sheet file for RTF, HTML or Latex.
+    RTF:        doxygen -w rtf styleSheetFile
+    HTML:       doxygen -w html headerFile footerFile styleSheetFile [configFile]
+    LaTeX:      doxygen -w latex headerFile footerFile styleSheetFile [configFile]
+
+6) Use doxygen to generate a rtf extensions file
+    RTF:   doxygen -e rtf extensionsFile
+
+If -s is specified the comments of the configuration items in the config file will be omitted.
+If configName is omitted `Doxyfile' will be used as a default.
+
+-v print version string
+
+D:\WorkSpace\ACMOBA\Server\GameHostServer\src\Script>cd ../../../ 
+
++++++ Compile Map(Lua and Lni) +++++
+map: FantasyAllStar, compile_nav: True, use_current: False, branch: None
+Your branch is behind 'origin/develop' by 6 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Updating b99282e..77e730d
+Fast-forward
+ ...75\234\345\274\212\346\214\207\344\273\244.lua" |  2 +-
+ ...07\273\346\235\200\345\245\226\345\212\261.lua" |  8 +-
+ ...07\264\345\221\275\345\217\214\346\236\252.lua" | 96 ++++++++++++++--------
+ FantasyAllStar/table/SpellData.ini                 | 12 ++-
+ FantasyAllStar/table/UnitData.ini                  | 42 +++++-----
+ 5 files changed, 96 insertions(+), 64 deletions(-)
+
+commit 77e730d4750c144c3382e8d67aba3b566033e203
+FantasyAllStar git_revision: 77e730d
+compile nav
+try to save git revision info
++++++ Compile Servers +++++
+pub GameHostServer(GameHostServer)
+pub AutoMatchServer(AutoMatchServer)
+pub UpdateServer(UpdateServer)
+cmdline: BuildConsole D:/WorkSpace/ACMOBA/Server/UpdateServer/projects/vs2013/UpdateServer.sln /prj="UpdateServer" /cfg="Release|Win32" /vsversion=vc12 /rebuild
+
+-----------------------------------------------------------------
+Build Acceleration Console 5.0 (build 1496)
+Copyright (C) 2001-2013 Xoreax Software Ltd. All rights reserved.
+-----------------------------------------------------------------
+
+
+Initializing...
+--------------------Build System Error-----------------------------------------
+Fatal error:
+    Task queue management failed.
+    Error starting Task 'qt5appwrapper: ' on machine 'Local CPU 1'
+    Failed to create process: C:\Windows\system32\cmd.exe; cmd /c ""C:\Program Files (x86)\Digia\Qt5VSAddin\qt5appwrapper.exe"  ": 参数错误。 (87)
+
+-------------------------------------------------------------------------------
+
+Microsoft Visual Studio 2013 12.0.21005.1 版。
+版权所有(C) Microsoft Corp. 保留所有权利。
+1>------ 已启动全部重新生成:  项目: UpdateServer, 配置: Release Win32 ------
+1>生成启动时间为 2016/1/11 12:06:49。
+1>_PrepareForClean:
+1>  正在删除文件“D:\WorkSpace\ACMOBA\Server\UpdateServer\projects\vs2013\../../tmp\UpdateServer.tlog\UpdateServer.lastbuildstate”。
+终止批处理操作吗(Y/N)? 
+终止批处理操作吗(Y/N)? 
+^C终止批处理操作吗(Y/N)? 
+ 
+1 build system error(s)
+ 
+build UpdateServer critical error, maybe incorrect params (code: 2)
+
+-----------------------------------------------------------------
+Build Acceleration Console 5.0 (build 1496)
+Copyright (C) 2001-2013 Xoreax Software Ltd. All rights reserved.
+-----------------------------------------------------------------
+
+
+Initializing...
+--------------------Build System Error-----------------------------------------
+Fatal error:
+    Task queue management failed.
+    Error starting Task 'qt5appwrapper: ' on machine 'Local CPU 1'
+    Failed to create process: C:\Windows\system32\cmd.exe; cmd /c ""C:\Program Files (x86)\Digia\Qt5VSAddin\qt5appwrapper.exe"  ": 参数错误。 (87)
+
+-------------------------------------------------------------------------------
+
+Microsoft Visual Studio 2013 12.0.21005.1 版。
+版权所有(C) Microsoft Corp. 保留所有权利。
+1>------ 已启动全部重新生成:  项目: UpdateServer, 配置: Release Win32 ------
+1>生成启动时间为 2016/1/11 12:06:49。
+1>_PrepareForClean:
+1>  正在删除文件“D:\WorkSpace\ACMOBA\Server\UpdateServer\projects\vs2013\../../tmp\UpdateServer.tlog\UpdateServer.lastbuildstate”。
+终止批处理操作吗(Y/N)? 
+终止批处理操作吗(Y/N)? 
+^C终止批处理操作吗(Y/N)? 
+ 
+1 build system error(s)
+ 
+build UpdateServer critical error, maybe incorrect params (code: 2)
+When Compiling Servers, 1 projects failed
+== post compile ==
++++++ Shipping Version Packing +++++
+Shipping Version Pack Src Path: D:/WorkSpace/VersionWorkDir/game\Shipping
+last_ver: 0.0.0.97; new_ver: 0.0.0.98
+pack src full path not valid
+compiler finished

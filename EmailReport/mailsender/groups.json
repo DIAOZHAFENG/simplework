@@ -1,0 +1,83 @@
+{
+	"test": [
+		"weiyuemin02@7fgame.com"
+		],
+	"all": [
+		"weiyuemin02@7fgame.com",
+		"yuliang@7fgame.com",
+		"chenyanhui@7fgame.com",
+		"jiangli@7fgame.com",
+		"lifeng@7fgame.com",
+		"shixiongfei@7fgame.com",
+		"sunyijiu@7fgame.com",
+		"wangshaojie02@7fgame.com",
+		"wupeifeng@7fgame.com",
+		"fuzuotao@7fgame.com",
+		"liuhang@7fgame.com",
+		"wangjie@7fgame.com",
+		"zhengweijian@7fgame.com",
+		"houwenjie@7fgame.com",
+		"yangqi@7fgame.com",
+		"sunjun02@7fgame.com",
+		"zhangfeng02@7fgame.com",
+		"zhangzhongwen@7fgame.com",
+		"lijun04@7fgame.com",
+		"wangshumin@7fgame.com",
+		"shudingwen@7fgame.com",
+		"renchunxu@7fgame.com"
+		],
+	"ai5v5": [
+		"weiyuemin02@7fgame.com",
+		"yuliang@7fgame.com",
+		"chenyanhui@7fgame.com",
+		"fuzuotao@7fgame.com",
+		"zhengweijian@7fgame.com",
+		"sunjun02@7fgame.com",
+		"zhangfeng02@7fgame.com",
+		"lijun04@7fgame.com"
+		],
+	"mobile": [
+		"chenshibo@7fgame.com",
+		"weiyuemin02@7fgame.com",
+		"liuhang@7fgame.com",
+		"liuzailin@7fgame.com",
+		"zhangyu04@7fgame.com",
+		"chenyanhui@7fgame.com"
+		],
+	"mobile_server": [
+		"chenshibo@7fgame.com",
+		"weiyuemin02@7fgame.com",
+		"liuhang@7fgame.com",
+		"chenyanhui@7fgame.com"
+		],
+	"war3": [
+		"zhengweijian@7fgame.com",
+		"sunyijiu@7fgame.com",
+		"xujinrui@7fgame.com",
+		"wudekan@7fgame.com",
+		"yangkun@7fgame.com"
+		],
+	"WeiYuemin": ["weiyuemin02@7fgame.com"],
+	"shixf":["shixiongfei@7fgame.com"],
+	"yangkun2":["yangkun@7fgame.com"],
+	"sunjun":["sunjun02@7fgame.com"],
+	"zhangtianzheng2":["zhangtianzheng@7fgame.com"],
+	"VersionMachine": [
+		"weiyuemin02@7fgame.com",
+		"wupeifeng@7fgame.com",
+		"fuzuotao@7fgame.com",
+		"wangjie@7fgame.com"
+		],
+	"VersionMachineMobile": [
+		"weiyuemin02@7fgame.com",
+		"liuhang@7fgame.com"
+		],
+	"autotest": ["weiyuemin02@7fgame.com"],
+	"autotest_linux": ["weiyuemin02@7fgame.com"],
+	"test_cyh":["chenyanhui@7fgame.com"],
+	"ai":[
+		"lijun04@7fgame.com",
+		"yuliang@7fgame.com",
+		"shudingwen@7fgame.com"
+		]
+}

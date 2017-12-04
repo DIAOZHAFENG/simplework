@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <title>从外网ftp下载文件到内网ftp，然后你就可以在内网下载下来了</title>
+        <style>
+            table{
+                margin: auto;
+                margin-top: 5%;
+                text-align: center;
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST" enctype="multipart/form-data" action="/compile">
+            <table border='1'>
+                <tr>
+                    <th colspan="6">版本服务器列表：</th>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <input type="radio" name="server" value="a" /> serverA Windows 闲置
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <input type="radio" name="server" value="b" /> serverB Linux 闲置
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        用户名：<input type="text" name="user"/>
+                        <br/>
+                        密码：<input type="password" name="password"/>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        指定编某个地图：<input type="text" name="map"/>
+                        <br/>
+                        指定编这个地图的某个分支：<input type="text" name="map-branch"/>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        把内网服务器版本发到外网（根据内网服务端svn版本号）：<input type="text" name="transfer-server"/>
+                        <br/>
+                        把内网特定服务器发到外网（指定server具体路径）：<input type="text" name="transfer-single-server"/>
+                        <br/>
+                        把内网客户端版本发到外网（根据客户端版本号）：<input type="text" name="transfer-client"/>
+                        <br/>
+                        把内网的内容发到指定的环境（要有发东西指定环境才有意义）：<input type="text" name="transfer-client"/>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        需要输入的参数：<input type="text" name="arg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <input type="checkbox" name="check_box_1" />
+                        复选参数1
+                        <br />
+                        <input type="checkbox" name="check_box_2" />
+                        复选参数2
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" name="env" value="qa" /> qa公网测试环境
+                    </td>
+                    <td colspan="2">
+                        <input type="radio" name="env" value="cage" /> cage笼子环境
+                    </td>
+                    <td colspan="2">
+                        <input type="radio" name="env" value="formal" /> formal正式环境
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        YPR分支：<input type="text" name="ypr_branch"/>
+                    </td>
+                    <td colspan="3">
+                        YPR提交：<input type="text" name="ypr_commit"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Common分支：<input type="text" name="common_branch"/>
+                    </td>
+                    <td colspan="3">
+                        Common提交：<input type="text" name="common_commit"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Client分支：<input type="text" name="client_branch"/>
+                    </td>
+                    <td colspan="3">
+                        Client提交：<input type="text" name="client_commit"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Server分支：<input type="text" name="server_branch"/>
+                    </td>
+                    <td colspan="3">
+                        Server提交：<input type="text" name="server_commit"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        AI分支：<input type="text" name="ai_branch"/>
+                    </td>
+                    <td colspan="3">
+                        AI提交：<input type="text" name="ai_commit"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        其他参数：<input type="text" name="other_args"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <em>这些不常用参数，如果要用的话自己输入其他参数中：</em><br/>
+                        seldom used arg1<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <input type="submit" value="提交"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
