@@ -1,0 +1,66 @@
+$def with(info)
+<html>
+    <head>
+        <title>LOG</title>
+        <style>
+            div{
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            p{
+                margin: auto;
+                text-align: center;
+            }
+            #terminal_output{
+                margin: auto;
+                width: 100%;
+                height: 90%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            $for record in info:
+                $if info[record].get('dealer'):
+                    <a href="http://$info[record]['dealer']/showLog/$record">$record; $info[record]['v1']; $info[record]['v2']</a>
+        </div>
+        <div id="res_tab"></div>
+        <!--<script type="text/javascript">-->
+            <!--var xhr = new XMLHttpRequest();-->
+            <!--function showLog(id, dealer){-->
+                <!--xhr.open("POST", dealer + "/showLog", true);-->
+                <!--xhr.send(id);-->
+                <!--xhr.onreadystatechange = function(){-->
+                    <!--if (xhr.readyState==4 && xhr.status==200){-->
+                        <!--var res = JSON.parse(xhr.responseText);-->
+                        <!--if (res.error){-->
+                            <!--alert(res.error);-->
+                        <!--}-->
+                        <!--else if (res.result){-->
+                            <!--var rt = document.getElementById("res_tab");-->
+                            <!--var t = "";-->
+                            <!--var t1w = 0;-->
+                            <!--var t2w = 0;-->
+                            <!--t += "<table border='1'><tr><th>session_id</th><th>winner</th></tr>";-->
+                            <!--for (r in res.result) {-->
+                                <!--t += "<tr><td>" + res.result[r]['session_id'] + "</td><td>" + res.result[r]['winner'] + "</td></tr>";-->
+                                <!--if (res.result[r]['winner'] == 1){-->
+                                    <!--t1w++;-->
+                                <!--}-->
+                                <!--else if (res.result[r]['winner'] == 2){-->
+                                    <!--t2w++;-->
+                                <!--}-->
+                            <!--}-->
+                            <!--t += "<tr><td>team1 wins: " + t1w + "</td><td>team2 wins: " + t2w + "</td></tr>";-->
+                            <!--t += "</table>";-->
+                            <!--rt.innerHTML = t-->
+                        <!--}-->
+                        <!--else {-->
+                            <!--alert("no infos about this task")-->
+                        <!--}-->
+                    <!--}-->
+                <!--}-->
+            <!--}-->
+        <!--</script>-->
+    </body>
+</html>

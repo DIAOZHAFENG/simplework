@@ -1,0 +1,40 @@
+$def with(info)
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>AITest</title>
+    <style>
+        div{
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        p{
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    $for dealer in info:
+        $if info[dealer].get('busy'):
+            <form method="GET" enctype="multipart/form-data" action="http://$dealer/abort">
+                <h3>正在处理任务$info[dealer].get('id')</h3><input type="submit" value="结束当前任务"/>
+            </form>
+        $else:
+            <h3>空闲</h3>
+        <hr/>
+    <form method="POST" enctype="multipart/form-data" action="/aiTest">
+        configure: <br/>
+        更新AI1?<input type="checkbox" name="en1" id="en1"/><br/>
+        AI1版本: <input type="text" name="v1" id="v1"/><br/>
+        AI1分支: <input type="text" name="b1" id="b1"/><br/>
+        更新AI2?<input type="checkbox" name="en2" id="en2"/><br/>
+        AI2版本: <input type="text" name="v2" id="v2"/><br/>
+        AI2分支: <input type="text" name="b2" id="b2"/><br/>
+        测试次数: <input type="number" name="t" id="t" required="required"/><br/>
+        update host:<input type="number" name="update" id="update"/><br/>
+        <p></p>
+        <input type="submit" value="提交"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "注释":"启动命令",
+  "cmd": "D:/ACGame/Server/GameHostServer/bin_copy/Win/GameHostServer.exe",
+  "注释":"创建server副本",
+  "make_new_copy": true,
+  "注释":"log输出位置(最好是相对路径)",
+  "log_path":"./version_battle_log",
+  "注释":"最大并行数",
+  "thread_num": 4,
+  "注释":"上次运行任务id",
+  "id": 0,
+  "注释":"总共跑times局",
+  "times": 10,
+  "注释":"ai配置",
+  "ai": [
+    {
+      "注释":"是否禁用这个配置",
+      "enable": true,
+      "注释":"ai文件夹的路径(最好是绝对路径)",
+      "ai_path": "",
+      "注释":"ai版本(git和svn都用这个字段)",
+      "ai_ver": "HEAD",
+      "注释":"分支(svn无效)",
+      "ai_branch": "develop"
+    },
+    {
+      "enable": true,
+      "ai_path": "",
+      "ai_ver": "HEAD",
+      "ai_branch": "develop"
+    }
+  ]
+}

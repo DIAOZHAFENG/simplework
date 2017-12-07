@@ -1,0 +1,12 @@
+{
+  "qcloud_appid": "10019353",
+  "qcloud_secret_id": "AKIDANxQBDwFyL9yoZrrS5I13HxbmXVqnWmP",
+  "qcloud_secret_key": "4UIYQpiCKObvndpYneHDz1w5Vf45VT26",
+  "qcloud_cos_bucket": "acreplay",
+  "local_root": "D:\\Host\\GameFileWriter\\bin\\Win\\ReplayFile",
+  "dst_root": "/replay",
+  "receiver": "shudingwen",
+  "self_ip": "10.105.24.197",
+  "port": 8080,
+  "thread_num": 4
+}
